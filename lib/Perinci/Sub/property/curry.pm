@@ -15,6 +15,7 @@ declare_property(
     schema => ['hash*'],
     wrapper => {
         meta => {
+            v       => 2,
             prio    => 10,
             convert => 1,
         },
