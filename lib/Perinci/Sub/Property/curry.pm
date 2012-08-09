@@ -1,4 +1,4 @@
-package Perinci::Sub::property::curry;
+package Perinci::Sub::Property::curry;
 
 use 5.010;
 use strict;
