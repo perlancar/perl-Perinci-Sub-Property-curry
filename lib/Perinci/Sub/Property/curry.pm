@@ -1,13 +1,15 @@
 package Perinci::Sub::Property::curry;
 
+# DATE
+# VERSION
+
 use 5.010001;
 use strict;
 use warnings;
 #use Log::Any '$log';
 
+use Data::Dmp;
 use Perinci::Sub::PropertyUtil qw(declare_property);
-
-# VERSION
 
 declare_property(
     name => 'curry',
@@ -30,8 +32,7 @@ declare_property(
                 $self->_errif(400, "\"Argument $an has been set by curry\"",
                               'exists($args{\''.$an.'\'})');
                 $self->push_lines(
-                    '$args{\''.$an.'\'} = '.
-                        Perinci::Sub::Wrapper::__squote($av).';');
+                    '$args{\''.$an.'\'} = '.dmp($av).';');
             }
         },
     },
