@@ -1,5 +1,12 @@
 Revision history for Perinci-Sub-Property-curry
 
+0.06    2016-05-11 (PERLANCAR)
+
+	- [dist] Bump prereq version Perinci::Sub::PropertyUtil to 0.11
+	  (incompatible change due to schema for Rinci function now in
+	  Sah::Schema::rinci::function_meta instead of Sah::Schema::Rinci).
+
+
 0.05    2016-02-23 (PERLANCAR)
 
 	- Adjust to Perinci::Sub::Wrapper 0.82 (__squote removed so we now use
